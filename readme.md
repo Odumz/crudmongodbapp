@@ -76,6 +76,8 @@ The postman collection can be imported at https://www.getpostman.com/collections
 ```
 
 ### Data Routes
+Get all route
+
 ```
  {URL}/api/v1/profiles:
   get:
@@ -87,7 +89,8 @@ The postman collection can be imported at https://www.getpostman.com/collections
          profile: {Object: {_id, name, email, country}}
       }
       ```
-
+  
+Get one route
 ```
  {URL}/api/v1/profile/:id:
   get:
@@ -100,9 +103,10 @@ The postman collection can be imported at https://www.getpostman.com/collections
       }
       ```
 
+Create route
 ```
  {URL}/api/v1/create:
-  get:
+  post:
     summary: Route for creating new records
     responses:
       status: '200'
@@ -112,9 +116,10 @@ The postman collection can be imported at https://www.getpostman.com/collections
       }
       ```
 
+Edit route
 ```
  {URL}/api/v1/edit/:id:
-  get:
+  put:
     summary: Route for editing a record
     responses:
       status: '200'
@@ -124,9 +129,10 @@ The postman collection can be imported at https://www.getpostman.com/collections
       }
       ```
 
+Delete route
 ```
  {URL}/api/v1/delete/:id:
-  get:
+  delete:
     summary: Route for getting all records
     responses:
       status: '200'
