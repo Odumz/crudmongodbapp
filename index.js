@@ -10,6 +10,9 @@ const connectDB = require('./db');
 const app = express();
 
 // connect to mongodb
+mongoose.set('useUnifiedTopology', true);
+mongoose.set('useCreateIndex', true);
+
 connectDB();
 
 // define port
@@ -22,6 +25,9 @@ const PORT = 5002;
 // use middlewares in app
 // enable cors
 app.use(cors());
+
+// fix mongoose depreciation
+mongoose.set('useFindAndModify', false);
 
 // parse requests of content-type - application/json
 app.use(express.json());

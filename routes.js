@@ -22,6 +22,17 @@ router.get('/', (req, res) => {
 
 
 /**
+ * /api/v1/profile/${id}:
+ *  get:
+ *    summary: Route for getting all records
+ *    responses:
+ *      '200':
+ *        description: OK
+ */
+ router.get('/profile/:id', crudController.get);
+
+
+/**
  * /api/v1/create:
  *  post:
  *    summary: Route for creating a record
@@ -40,17 +51,17 @@ router.post('/create', crudController.add);
  *      '200':
  *        description: OK
  */
- router.put('/edit/$id', crudController.edit);
+ router.put('/edit/:id', crudController.edit);
 
 
 /**
- * /api/v1/delete:
+ * /api/v1/delete/${id}:
  *  delet:
  *    summary: Route for deleting a record
  *    responses:
  *      '200':
  *        description: OK
  */
-router.delete('/delete', crudController.delete);
+router.delete('/delete/:id', crudController.delete);
 
 module.exports = router;
