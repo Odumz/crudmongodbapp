@@ -88,7 +88,7 @@ Get all route
          message: {String: 'All profiles successfully fetched'},
          profile: {Object: {_id, name, email, country}}
       }
-      ```
+```
   
 Get one route
 ```
@@ -101,7 +101,7 @@ Get one route
          message: {String: 'Profile successfully fetched'},
          profile: {Object: {_id, name, email, country}}
       }
-      ```
+```
 
 Create route
 ```
@@ -114,7 +114,7 @@ Create route
          message: {String: 'Profile successfully created'},
          profile: {Object: {_id, name, email, country}}
       }
-      ```
+```
 
 Edit route
 ```
@@ -127,7 +127,7 @@ Edit route
          message: {String: 'Profile updated successfully'},
          profile: {Object: {_id, name, email, country}}
       }
-      ```
+```
 
 Delete route
 ```
