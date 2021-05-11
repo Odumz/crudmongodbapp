@@ -57,20 +57,23 @@ The postman collection can be imported at https://www.getpostman.com/collections
 <p></p>Production URL: https://polar-shelf-91739.herokuapp.com</p>
 
 ### Test Routes
-
+```
  {URL}:
   get:
     summary: Test route to check connection
     responses:
       status: '200'
       message: 'Welcome to my crud application with mongodb.'
+```
 
+```
  {URL}/api/v1:
   get:
     summary: Test route to check connection
     responses:
       status: '200'
       message: 'Welcome to the my crud application with mongo db. This is the profile service'
+```
 
 ### Data Routes
 
