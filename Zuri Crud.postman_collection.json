@@ -11,12 +11,10 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5002/api/v1/delete/609a8c1f80a5ad23600ce6ae",
-					"protocol": "http",
+					"raw": "{{URL}}/api/v1/delete/609a8c1f80a5ad23600ce6ae",
 					"host": [
-						"localhost"
+						"{{URL}}"
 					],
-					"port": "5002",
 					"path": [
 						"api",
 						"v1",
@@ -34,12 +32,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5002/api/v1/profiles",
-					"protocol": "http",
+					"raw": "{{URL}}/api/v1/profiles",
 					"host": [
-						"localhost"
+						"{{URL}}"
 					],
-					"port": "5002",
 					"path": [
 						"api",
 						"v1",
@@ -56,17 +52,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5002/api/v1/profile/609a86ecd79c7b945afce535",
-					"protocol": "http",
+					"raw": "{{URL}}/api/v1/profile/609a8132a6c44bcbfb4536aa",
 					"host": [
-						"localhost"
+						"{{URL}}"
 					],
-					"port": "5002",
 					"path": [
 						"api",
 						"v1",
 						"profile",
-						"609a86ecd79c7b945afce535"
+						"609a8132a6c44bcbfb4536aa"
 					]
 				},
 				"description": "Get a resource by id"
@@ -80,7 +74,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"Jumia\",\n    \"email\": \"olaji@ymail.oye\",\n    \"country\": \"igbobe\"\n}",
+					"raw": "{\n    \"name\": \"Antoinne Laporta\",\n    \"email\": \"juanlaporta@barcelona.fcb\",\n    \"country\": \"Argentina\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -88,12 +82,10 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5002/api/v1/create",
-					"protocol": "http",
+					"raw": "{{URL}}/api/v1/create",
 					"host": [
-						"localhost"
+						"{{URL}}"
 					],
-					"port": "5002",
 					"path": [
 						"api",
 						"v1",
@@ -119,17 +111,15 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:5002/api/v1/edit/609a86ecd79c7b945afce535",
-					"protocol": "http",
+					"raw": "{{URL}}/api/v1/edit/609a8132a6c44bcbfb4536aa",
 					"host": [
-						"localhost"
+						"{{URL}}"
 					],
-					"port": "5002",
 					"path": [
 						"api",
 						"v1",
 						"edit",
-						"609a86ecd79c7b945afce535"
+						"609a8132a6c44bcbfb4536aa"
 					]
 				},
 				"description": "Edit a resource"
@@ -138,30 +128,13 @@
 		},
 		{
 			"name": "Test connection",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"name\": \"Jumia\",\n    \"email\": \"olaji@ymail.oye\",\n    \"country\": \"igbobe\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": {
-					"raw": "http://localhost:5002/",
-					"protocol": "http",
+					"raw": "{{URL}}",
 					"host": [
-						"localhost"
-					],
-					"port": "5002",
-					"path": [
-						""
+						"{{URL}}"
 					]
 				},
 				"description": "To test the connection"
@@ -170,28 +143,14 @@
 		},
 		{
 			"name": "Test connection 2",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"name\": \"Jumia\",\n    \"email\": \"olaji@ymail.oye\",\n    \"country\": \"igbobe\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": {
-					"raw": "http://localhost:5002/api/v1",
-					"protocol": "http",
+					"raw": "{{URL}}/api/v1",
 					"host": [
-						"localhost"
+						"{{URL}}"
 					],
-					"port": "5002",
 					"path": [
 						"api",
 						"v1"
