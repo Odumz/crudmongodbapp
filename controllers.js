@@ -10,6 +10,11 @@ class crudController {
         .select('_id name email country')
         .exec()
         .then(profiles => {
+            if (profiles == '') {
+                return res.status(404).json({
+                    message: 'No profile data found'
+                })
+            }
             const response = {
                 message: 'All profiles successfully fetched',
                 profile: profiles.map(profile => {
@@ -17,7 +22,7 @@ class crudController {
                         _id: profile._id,
                         name: profile.name,
                         email: profile.email,
-                        country: profile.country,
+                        country: profile.country
                     }
                 })
             };
