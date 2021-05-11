@@ -114,6 +114,14 @@ Create route
          message: {String: 'Profile successfully created'},
          profile: {Object: {_id, name, email, country}}
       }
+      body: {
+         option: raw,
+         payload: {
+            "name": "Antoinne Laporta",
+            "email": "juanlaporta@barcelona.fcb",
+            "country": "Argentina"
+         }
+      }
 ```
 
 Edit route
@@ -126,6 +134,14 @@ Edit route
       message: {
          message: {String: 'Profile updated successfully'},
          profile: {Object: {_id, name, email, country}}
+      }
+      body: {
+         option: raw,
+         payload: {
+            "name": "Antoinne Laporta",
+            "email": "juanlaporta@barcelona.fcb",
+            "country": "Argentina"
+         }
       }
 ```
 
