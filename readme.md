@@ -76,7 +76,7 @@ The postman collection can be imported at https://www.getpostman.com/collections
 ```
 
 ### Data Routes
-
+```
  {URL}/api/v1/profiles:
   get:
     summary: Route for getting all records
@@ -86,7 +86,9 @@ The postman collection can be imported at https://www.getpostman.com/collections
          message: {String: 'All profiles successfully fetched'},
          profile: {Object: {_id, name, email, country}}
       }
+      ```
 
+```
  {URL}/api/v1/profile/:id:
   get:
     summary: Route for getting a record by id
@@ -96,7 +98,9 @@ The postman collection can be imported at https://www.getpostman.com/collections
          message: {String: 'Profile successfully fetched'},
          profile: {Object: {_id, name, email, country}}
       }
+      ```
 
+```
  {URL}/api/v1/create:
   get:
     summary: Route for creating new records
@@ -106,7 +110,9 @@ The postman collection can be imported at https://www.getpostman.com/collections
          message: {String: 'Profile successfully created'},
          profile: {Object: {_id, name, email, country}}
       }
+      ```
 
+```
  {URL}/api/v1/edit/:id:
   get:
     summary: Route for editing a record
@@ -116,7 +122,9 @@ The postman collection can be imported at https://www.getpostman.com/collections
          message: {String: 'Profile updated successfully'},
          profile: {Object: {_id, name, email, country}}
       }
+      ```
 
+```
  {URL}/api/v1/delete/:id:
   get:
     summary: Route for getting all records
@@ -126,3 +134,4 @@ The postman collection can be imported at https://www.getpostman.com/collections
          message: {String: 'Profile deleted successfully'},
          profile: {String: 'item no longer exists'}
       }
+```
