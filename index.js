@@ -16,7 +16,7 @@ mongoose.set('useCreateIndex', true);
 connectDB();
 
 // define port
-const PORT = 5002;
+const PORT = process.env.PORT || 5002;
 
 // var corsOptions = {
 //   origin: "http://localhost:8080"
