@@ -29,7 +29,7 @@ Hint:
 Test your routes with postman. Ensure they work
 Deploying Node.js Apps on Heroku | Heroku Dev Center
 
-### Installation and Usage
+## Installation and Usage
 
 1. Clone the repo
    ```sh
@@ -48,30 +48,33 @@ Deploying Node.js Apps on Heroku | Heroku Dev Center
    npm run start
    ```
 
-### Routes and Usage
+## Routes and Usage
 
 The postman collection can be imported at https://www.getpostman.com/collections/19425c4728c712fe1857
 
+### Environments
+Local URL: http://localhost:5002
+Production URL: https://polar-shelf-91739.herokuapp.com
 
-## Test Routes
+### Test Routes
 
- {URL}:5002:
+ {URL}:
   get:
     summary: Test route to check connection
     responses:
       status: '200'
       message: 'Welcome to my crud application with mongodb.'
 
- {URL}:5002/api/v1:
+ {URL}/api/v1:
   get:
     summary: Test route to check connection
     responses:
       status: '200'
       message: 'Welcome to the my crud application with mongo db. This is the profile service'
 
-## Data Routes
+### Data Routes
 
- {URL}:5002/api/v1/profiles:
+ {URL}/api/v1/profiles:
   get:
     summary: Route for getting all records
     responses:
@@ -81,7 +84,7 @@ The postman collection can be imported at https://www.getpostman.com/collections
          profile: {Object: {_id, name, email, country}}
       }
 
- {URL}:5002/api/v1/profile/:id:
+ {URL}/api/v1/profile/:id:
   get:
     summary: Route for getting a record by id
     responses:
@@ -91,7 +94,7 @@ The postman collection can be imported at https://www.getpostman.com/collections
          profile: {Object: {_id, name, email, country}}
       }
 
- {URL}:5002/api/v1/create:
+ {URL}/api/v1/create:
   get:
     summary: Route for creating new records
     responses:
@@ -101,7 +104,7 @@ The postman collection can be imported at https://www.getpostman.com/collections
          profile: {Object: {_id, name, email, country}}
       }
 
- {URL}:5002/api/v1/edit/:id:
+ {URL}/api/v1/edit/:id:
   get:
     summary: Route for editing a record
     responses:
@@ -111,7 +114,7 @@ The postman collection can be imported at https://www.getpostman.com/collections
          profile: {Object: {_id, name, email, country}}
       }
 
- {URL}:5002/api/v1/delete/:id::
+ {URL}/api/v1/delete/:id:
   get:
     summary: Route for getting all records
     responses:
