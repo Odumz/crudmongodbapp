@@ -1,4 +1,4 @@
-const express = require('express');
+// import model
 const Profile = require('./ProfileModel');
 
 class crudController {
@@ -20,7 +20,7 @@ class crudController {
                         _id: profile._id,
                         name: profile.name,
                         email: profile.email,
-                        country: profile.country
+                        country: profile.country,
                     }
                 })
             };
